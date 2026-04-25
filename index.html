@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JESCOBAR – Aire Acondicionado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">J<span>ESCOBAR</span></a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#trabajos">Trabajos</a></li>
+    <li><a href="#opiniones">Opiniones</a></li>
+    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios" onclick="toggleMenu()">Servicios</a>
+  <a href="#trabajos" onclick="toggleMenu()">Trabajos</a>
+  <a href="#opiniones" onclick="toggleMenu()">Opiniones</a>
+  <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">⚙️ Técnico matriculado en refrigeración</div>
+      <h1>Instalación,<br>Reparación &<br><em>Mantenimiento</em><br>de Aire Acondicionado</h1>
+      <p>Servicio profesional, rápido y confiable para tu hogar o empresa. Trabajo garantizado con experiencia en el oficio.</p>
+      <div class="hero-btns">
+        <a href="#contacto" class="btn btn-yellow">
+          💬 Pedir Presupuesto
+        </a>
+        <a href="#trabajos" class="btn btn-ghost">Ver Trabajos ↓</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <svg class="hero-svg" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+        <!-- AC Unit illustration -->
+        <rect x="20" y="80" width="220" height="110" rx="14" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.3)" stroke-width="2"/>
+        <rect x="36" y="95" width="188" height="80" rx="8" fill="rgba(218,233,255,.15)" stroke="rgba(218,233,255,.35)" stroke-width="1.5"/>
+        <!-- grille lines -->
+        <line x1="36" y1="115" x2="224" y2="115" stroke="rgba(255,255,255,.25)" stroke-width="1.2"/>
+        <line x1="36" y1="130" x2="224" y2="130" stroke="rgba(255,255,255,.25)" stroke-width="1.2"/>
+        <line x1="36" y1="145" x2="224" y2="145" stroke="rgba(255,255,255,.25)" stroke-width="1.2"/>
+        <line x1="36" y1="160" x2="224" y2="160" stroke="rgba(255,255,255,.25)" stroke-width="1.2"/>
+        <!-- power light -->
+        <circle cx="200" cy="105" r="5" fill="#fdca39"/>
+        <circle cx="200" cy="105" r="8" fill="rgba(253,202,57,.25)"/>
+        <!-- brand strip -->
+        <rect x="36" y="95" width="188" height="18" rx="6" fill="rgba(0,0,0,.15)"/>
+        <text x="80" y="108" font-family="'Barlow Condensed', sans-serif" font-weight="700" font-size="11" fill="rgba(255,255,255,.8)" letter-spacing="3">JESCOBAR</text>
+        <!-- snowflakes -->
+        <text x="40" y="50" font-size="22" fill="rgba(218,233,255,.6)">❄</text>
+        <text x="90" y="35" font-size="16" fill="rgba(218,233,255,.4)">❄</text>
+        <text x="150" y="50" font-size="20" fill="rgba(218,233,255,.55)">❄</text>
+        <text x="200" y="38" font-size="14" fill="rgba(218,233,255,.4)">❄</text>
+        <!-- tools -->
+        <text x="80" y="225" font-size="26" fill="rgba(253,202,57,.7)">🔧</text>
+        <text x="130" y="230" font-size="22" fill="rgba(255,255,255,.4)">🌡</text>
+        <text x="175" y="225" font-size="26" fill="rgba(253,202,57,.5)">⚡</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-track">
+    <div class="strip-item"><span class="strip-dot"></span>Instalación de Split</div>
+    <div class="strip-item"><span class="strip-dot"></span>Reparación de Equipos</div>
+    <div class="strip-item"><span class="strip-dot"></span>Mantenimiento Preventivo</div>
+    <div class="strip-item"><span class="strip-dot"></span>Carga de Gas</div>
+    <div class="strip-item"><span class="strip-dot"></span>Diagnóstico Técnico</div>
+    <div class="strip-item"><span class="strip-dot"></span>Limpieza de Filtros</div>
+    <div class="strip-item"><span class="strip-dot"></span>Servicio a Domicilio</div>
+    <!-- duplicate for infinite effect -->
+    <div class="strip-item"><span class="strip-dot"></span>Instalación de Split</div>
+    <div class="strip-item"><span class="strip-dot"></span>Reparación de Equipos</div>
+    <div class="strip-item"><span class="strip-dot"></span>Mantenimiento Preventivo</div>
+    <div class="strip-item"><span class="strip-dot"></span>Carga de Gas</div>
+    <div class="strip-item"><span class="strip-dot"></span>Diagnóstico Técnico</div>
+    <div class="strip-item"><span class="strip-dot"></span>Limpieza de Filtros</div>
+    <div class="strip-item"><span class="strip-dot"></span>Servicio a Domicilio</div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-inner">
+    <p class="section-label">Lo que ofrezco</p>
+    <h2 class="section-title">Mis <em>Servicios</em></h2>
+    <p class="section-desc">Todo lo que necesitás para tener tu aire en perfecto estado, con trabajo garantizado y atención personalizada.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔩</div>
+        <h3>Instalación</h3>
+        <p>Instalación profesional de equipos split, ventana y central. Trabajo prolijo, limpio y con habilitación técnica.</p>
+        <ul>
+          <li>Split frío/calor</li>
+          <li>Equipos multisplit</li>
+          <li>Conductos y cañerías</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Reparación</h3>
+        <p>Diagnóstico y reparación de todo tipo de fallas: no enfría, no prende, pierde agua, hace ruido y más.</p>
+        <ul>
+          <li>Carga de gas</li>
+          <li>Cambio de componentes</li>
+          <li>Reparación de plaquetas</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Mantenimiento</h3>
+        <p>Limpieza completa y mantenimiento preventivo para que tu equipo rinda al 100% y dure mucho más.</p>
+        <ul>
+          <li>Limpieza de filtros</li>
+          <li>Sanitización completa</li>
+          <li>Revisión general</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJOS -->
+<section id="trabajos">
+  <div class="section-inner">
+    <p class="section-label">Portfolio</p>
+    <h2 class="section-title">Trabajos <em>Realizados</em></h2>
+    <p class="section-desc">Cada trabajo refleja mi compromiso con la calidad y el detalle. Hacé clic para ver en detalle.</p>
+
+    <!-- ── FOTOS ── -->
+    <div class="portfolio-block">
+      <div class="portfolio-block-header">
+        <span class="portfolio-tag">📸 Fotos de trabajos</span>
+      </div>
+      <input type="file" id="fileInput" accept="image/*" multiple onchange="handlePhotoUpload(event)" style="display:none;" />
+      <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-prev" onclick="carouselMove('photo', -1)" aria-label="Anterior">&#8592;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="photoTrack">
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/aire limpio.png" alt="Instalación de split" loading="lazy" />
+              <div class="gallery-overlay"><span>Instalación Split</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/aire limpio2.png" alt="Mantenimiento" loading="lazy" />
+              <div class="gallery-overlay"><span>Limpieza</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/limpieza aire.png" alt="Reparación" loading="lazy" />
+              <div class="gallery-overlay"><span>Mantenimiento</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/limpieza2.png" alt="Instalación" loading="lazy" />
+              <div class="gallery-overlay"><span>Instalación</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/carga de gas.png" alt="Carga de gas" loading="lazy" />
+              <div class="gallery-overlay"><span>Carga de gas</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/motores.png" alt="Motores" loading="lazy" />
+              <div class="gallery-overlay"><span>Motores</span></div>
+            </div>
+            <div class="carousel-slide gallery-item" onclick="openLightbox('image', this.querySelector('img').src)">
+              <img src="./assets/motores.png" alt="Reparación" loading="lazy" />
+              <div class="gallery-overlay"><span>Reparación</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" onclick="carouselMove('photo', 1)" aria-label="Siguiente">&#8594;</button>
+      </div>
+      <div class="carousel-dots" id="photoDots"></div>
+    </div>
+
+    <!-- ── VIDEOS ── -->
+    <div class="portfolio-block">
+      <div class="portfolio-block-header">
+        <span class="portfolio-tag">🎬 Videos en acción</span>
+      </div>
+      <input type="file" id="videoInput" accept="video/*" multiple onchange="handleVideoUpload(event)" style="display:none;" />
+      <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-prev" onclick="carouselMove('video', -1)" aria-label="Anterior">&#8592;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="videoTrack">
+            <!-- Placeholder: reemplazá src con tus videos reales -->
+            <div class="carousel-slide video-item" onclick="openLightbox('video', this.querySelector('video').src)">
+              <video muted loop playsinline preload="metadata">
+                <source src="./assets/video1.mp4" type="video/mp4" />
+              </video>
+              <div class="gallery-overlay video-overlay">
+                <div class="play-btn">▶</div>
+                <span>Instalación completa</span>
+              </div>
+            </div>
+            <div class="carousel-slide video-item" onclick="openLightbox('video', this.querySelector('video').src)">
+              <video muted loop playsinline preload="metadata">
+                <source src="./assets/video2.mp4" type="video/mp4" />
+              </video>
+              <div class="gallery-overlay video-overlay">
+                <div class="play-btn">▶</div>
+                <span>Mantenimiento preventivo</span>
+              </div>
+            </div>
+            <div class="carousel-slide video-item" onclick="openLightbox('video', this.querySelector('video').src)">
+              <video muted loop playsinline preload="metadata">
+                <source src="./assets/video3.mp4" type="video/mp4" />
+              </video>
+              <div class="gallery-overlay video-overlay">
+                <div class="play-btn">▶</div>
+                <span>Carga de gas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" onclick="carouselMove('video', 1)" aria-label="Siguiente">&#8594;</button>
+      </div>
+      <div class="carousel-dots" id="videoDots"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="" style="display:none;" />
+  <video id="lightboxVideo" controls autoplay style="display:none; max-width:90vw; max-height:85vh; border-radius:8px;"></video>
+</div>
+
+<!-- OPINIONES -->
+<section id="opiniones">
+  <div class="section-inner">
+    <p class="section-label">Clientes satisfechos</p>
+    <h2 class="section-title">¿Qué dicen mis <em>Clientes?</em></h2>
+    <p class="section-desc">La opinión de cada cliente es lo que más me importa.</p>
+    <div class="reviews-scroll" id="reviewsContainer">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Excelente trabajo, muy prolijo y rápido. El aire quedó instalado perfecto y la atención fue muy buena. Lo recomiendo sin dudas."</p>
+        <div class="review-author">
+          <div class="author-avatar">MG</div>
+          <div><div class="author-name">Marcela G.</div><div class="author-loc">Pilar, Buenos Aires</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Me solucionó el problema del aire que hacía ruido en minutos. Muy profesional, explicó todo lo que hacía. Precio muy justo."</p>
+        <div class="review-author">
+          <div class="author-avatar">RL</div>
+          <div><div class="author-name">Roberto L.</div><div class="author-loc">José C. Paz, Buenos Aires</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Hizo el mantenimiento de los 3 aires de casa. Trabajo impecable, puntual y muy atento. Ya los tenemos como técnico de confianza."</p>
+        <div class="review-author">
+          <div class="author-avatar">CP</div>
+          <div><div class="author-name">Carolina P.</div><div class="author-loc">Del Viso, Buenos Aires</div></div>
+        </div>
+      </div>
+      <!--<div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Muy buen técnico, resolvió un problema que otros no habían podido. El equipo quedó como nuevo. Definitivamente lo vuelvo a llamar."</p>
+        <div class="review-author">
+          <div class="author-avatar">FA</div>
+          <div><div class="author-name">Fernando A.</div><div class="author-loc">Malvinas Argentinas</div></div>
+        </div>
+      </div>-->
+    </div>
+
+    <!-- Add review form -->
+    <!--<div class="add-review-box">
+      <h4>💬 Dejá tu opinión</h4>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tu nombre</label>
+          <input type="text" id="reviewName" placeholder="Juan P." />
+        </div>
+        <div class="form-group">
+          <label>Localidad</label>
+          <input type="text" id="reviewLoc" placeholder="Buenos Aires" />
+        </div>
+      </div>
+      <div>
+        <label style="font-size:.72rem;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:.07em;display:block;margin-bottom:.4rem;">Puntuación</label>
+        <div class="star-pick" id="starPick">
+          <span onclick="setStars(1)">★</span>
+          <span onclick="setStars(2)">★</span>
+          <span onclick="setStars(3)">★</span>
+          <span onclick="setStars(4)">★</span>
+          <span onclick="setStars(5)">★</span>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:.9rem;">
+        <label>Comentario</label>
+        <textarea id="reviewText" placeholder="Contá cómo fue tu experiencia..."></textarea>
+      </div>
+      <button class="btn-submit" onclick="submitReview()">Enviar Opinión</button>
+    </div>-->
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-inner">
+    <p class="section-label">Contactate</p>
+    <h2 class="section-title">Hablemos <em>Hoy</em></h2>
+    <p class="section-desc">Consultá sin compromiso por WhatsApp o mail. Te respondo rápido y te doy el mejor presupuesto.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="https://wa.me/5491134250135?text=Hola%20JESCOBAR!%20Necesito%20un%20presupuesto." class="contact-card" target="_blank">
+          <div class="contact-icon wa">💬</div>
+          <div>
+            <div class="contact-label">WhatsApp - <span>Jairo Escobar</span></div>
+            <div class="contact-value">+54 9 11 3425-0135</div>
+          </div>
+        </a>
+        <a href="mailto:servicio.jairoescobar@gmail.com" class="contact-card">
+          <div class="contact-icon mail">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">servicio.jairoescobar@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/jescobar.service/" class="contact-card">
+          <div class="contact-icon mail">📷</div>
+          <div>
+            <div class="contact-label">instagram</div>
+            <div class="contact-value">/jescobar.service</div>
+          </div>
+        </a>
+        <div class="contact-card" style="cursor:default;">
+          <div class="contact-icon" style="background:var(--light-blue);font-size:1.3rem;">🕐</div>
+          <div>
+            <div class="contact-label">Horario de atención</div>
+            <div class="contact-value">Lun–Sáb &nbsp;8:00 – 20:00</div>
+          </div>
+        </div>
+        <div class="contact-card" style="cursor:default;">
+          <div class="contact-icon" style="background:var(--light-blue);font-size:1.3rem;">📍</div>
+          <div>
+            <div class="contact-label">Zona de cobertura</div>
+            <div class="contact-value">GBA Norte y Oeste</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-visual">
+        <div class="big-icon">❄️</div>
+        <h3>¿Necesitás un presupuesto?</h3>
+        <p>Escribime y te respondo en minutos. Sin cargo y sin compromiso.</p>
+        <a href="https://wa.me/5491134250135?text=Hola%20JESCOBAR!%20Necesito%20un%20presupuesto." class="btn btn-yellow" target="_blank">
+          💬 Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>JESCOBAR</strong> · Técnico en Refrigeración y Aire Acondicionado</p>
+  <p style="margin-top:.5rem;">
+    <a href="https://wa.me/5491134250135" target="_blank">WhatsApp</a> &nbsp;·&nbsp;
+    <a href="mailto:servicio.jairoescobar@gmail.com">servicio.jairoescobar@gmail.com</a>
+  </p>
+  <p style="margin-top:.8rem;font-size:.75rem;opacity:.6;">© 2026 JESCOBAR · Todos los derechos reservados</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/5491134250135?text=Hola%20JESCOBAR!%20Necesito%20un%20presupuesto." class="wa-float" target="_blank" title="Escribir por WhatsApp">💬</a>
+
+<script src="./JS/script.js"></script>
+</body>
+</html>
